@@ -9,7 +9,7 @@ function App() {
 	const [expression, setExpression] = useState("");
 	const [decimalCtr, setDecimalCtr] = useState(0);
 	const [result, setResult] = useState("");
-	const [active, setActive] = useState(false);
+	// const [active, setActive] = useState(false);
 
 	const display = (input) => {
 		switch (input) {
