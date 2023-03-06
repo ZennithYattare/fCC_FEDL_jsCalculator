@@ -7,4 +7,7 @@ import react from "@vitejs/plugin-react-swc";
 export default defineConfig({
 	base: "/fCC_FEDL_jsCalculator/",
 	plugins: [react()],
+	build: {
+		chunkSizeWarningLimit: 1600,
+	},
 });
