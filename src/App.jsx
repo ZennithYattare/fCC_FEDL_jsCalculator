@@ -9,7 +9,6 @@ function App() {
 	const [expression, setExpression] = useState("");
 	const [decimalCtr, setDecimalCtr] = useState(0);
 	const [result, setResult] = useState("");
-	// const [active, setActive] = useState(false);
 
 	const display = (input) => {
 		switch (input) {
@@ -184,187 +183,119 @@ function App() {
 				<div className="grid grid-cols-4 h-80">
 					<button
 						id="clear"
-						className={`rounded-none border border-stone-400 col-span-2 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 col-span-2 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={allClear}
 					>
 						AC
 					</button>
 					<button
 						id="divide"
-						className={`rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={() => display("/")}
 					>
 						/
 					</button>
 					<button
 						id="multiply"
-						className={`rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={() => display("*")}
 					>
 						X
 					</button>
 					<button
 						id="seven"
-						className={`rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={() => display("7")}
 					>
 						7
 					</button>
 					<button
 						id="eight"
-						className={`rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={() => display("8")}
 					>
 						8
 					</button>
 					<button
 						id="nine"
-						className={`rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={() => display("9")}
 					>
 						9
 					</button>
 					<button
 						id="subtract"
-						className={`rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={() => display("-")}
 					>
 						-
 					</button>
 					<button
 						id="four"
-						className={`rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={() => display("4")}
 					>
 						4
 					</button>
 					<button
 						id="five"
-						className={`rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={() => display("5")}
 					>
 						5
 					</button>
 					<button
 						id="six"
-						className={`rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={() => display("6")}
 					>
 						6
 					</button>
 					<button
 						id="add"
-						className={`rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={() => display("+")}
 					>
 						+
 					</button>
 					<button
 						id="one"
-						className={`rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={() => display("1")}
 					>
 						1
 					</button>
 					<button
 						id="two"
-						className={`rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={() => display("2")}
 					>
 						2
 					</button>
 					<button
 						id="three"
-						className={`rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={() => display("3")}
 					>
 						3
 					</button>
 					<button
 						id="equals"
-						className={`rounded-none border border-stone-400 row-span-2 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 row-span-2 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={() => evaluate()}
 					>
 						=
 					</button>
 					<button
 						id="zero"
-						className={`rounded-none border border-stone-400 col-span-2 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 col-span-2 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={() => display("0")}
 					>
 						0
 					</button>
 					<button
 						id="decimal"
-						className={`rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400 ${
-							active
-								? "border-2 border-zinc-700"
-								: "border-2 border-t-slate-200 border-l-slate-200 border-r-[#cccccc] border-b-[#cccccc]"
-						}`}
+						className="rounded-none border border-stone-400 text-2xl font-semibold shadow-[2px_2px_2px_black] hover:bg-zinc-400"
 						onClick={() => display(".")}
 					>
 						.
