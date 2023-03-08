@@ -10,6 +10,7 @@ function App() {
 	const [decimalCtr, setDecimalCtr] = useState(0);
 	const [result, setResult] = useState("");
 
+	// A function that displays the input on the screen
 	const display = (input) => {
 		switch (input) {
 			case ".": {
